@@ -14,7 +14,7 @@ This Discord chatbot is designed to interact with users in Discord channels, pro
 ## Installation
 1. Clone the repository to your local environment.
 2. Install dependencies by running `npm install`.
-3. Set up environment variables by creating a `.env` file and providing values for `DISCORD_TOKEN` and `OPENAI_API_KEY`.
+3. Set up environment variables by creating a `.env` file and providing values for `TOKEN` and `API_KEY`.
 
 ## Usage
 1. Ensure that the bot has been invited to your Discord server and has appropriate permissions.
