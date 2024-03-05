@@ -2,9 +2,8 @@ import "dotenv/config";
 import { Client, GatewayIntentBits } from "discord.js";
 import { messageCreate } from "./messageCreate.js";
 import { IntentsBitField } from "discord.js";
-import { execute } from "./hiCommand.js";
-import { serverExecute, serverData } from "./serverCommand.js";
-import { userExecute, userData } from "./userCommand.js";
+import { execute } from "./commands/hiCommand.js";
+import { serverData, serverExecute } from "./commands/serverCommand.js";
 
 const myIntents = new IntentsBitField();
 myIntents.add(
@@ -43,3 +42,5 @@ client.on("messageCreate", async (message) => {
 });
 
 client.login(process.env.TOKEN);
+
+export { client };

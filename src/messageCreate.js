@@ -1,5 +1,5 @@
 import { OpenAI } from "openai";
-import { pingExecute } from "./pingCommand.js";
+import { pingExecute } from "./commands/pingCommand.js";
 
 const openai = new OpenAI({
   apiKey: process.env.API_KEY,

@@ -1,6 +1,6 @@
 import { Client } from "discord.js";
 import assert from "assert";
-import { messageCreate } from "../messageCreate.js";
+import { messageCreate } from "../src/messageCreate.js";
 import { IntentsBitField } from "discord.js";
 
 export default async function testMessageListener() {

@@ -1,25 +1,24 @@
-// hiCommand.test.js
+import { data, execute } from "../src/commands/hiCommand.js";
+import assert from "assert";
+import { describe, it } from "node:test";
 
-// import { data, execute } from "../hiCommand.js";
+describe("Hi Command", () => {
+  it("should have the correct name and description", () => {
+    assert.strictEqual(data.name, "hi");
+    assert.strictEqual(data.description, "Hello, nice to see you!");
+  });
 
-// // Mock interaction for testing
-// export const mockInteraction = {
-//   reply: function (response) {
-//     console.log("Reply:", response);
-//   },
-// };
+  it('should reply with "Good moaning!"', async () => {
+    // Create a mock interaction object (you may need to adjust based on your actual interaction object structure)
+    const mockInteraction = {
+      reply: async (message) => {
+        assert.strictEqual(message, "Good moaning!");
+      },
+    };
 
-// // Test suite for the 'hi' command
-// export const runHiTests = () => {
-//   try {
-//     // Test case 1
-//     execute(mockInteraction);
-//     console.log("Test case 1 passed");
-//     console.log("All tests passed!");
-//   } catch (error) {
-//     console.error("Error in test execution:", error);
-//   }
-// };
+    // Execute the hi command
+    await execute(mockInteraction);
+  });
 
-// // Run the tests
-// // runHiTests();
+  // Add more tests as needed
+});

@@ -5,8 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "nodemon": "nodemon index.js",
-    "tests": "nodemon runTests.js"
+    "nodemon": "nodemon src/index.js",
+    "tests": "node tests/runTests.js",
+    "ping" :"node tests/ping.test.js",
+    "hi": "node tests/hiCommand.test.js"
   },
   "keywords": [],
   "author": "",
