@@ -20,10 +20,11 @@ Follow these steps to set up and run the bot locally.
    ```bash
    git clone https://github.com/EmilRosenov/1st-SImple-Discord-ChatBot.git
    cd your-repo
-2. **Install Dependencies:**
-   npm install
-3.**Configure Environment Variables:**
    
+2. **Install Dependencies:**
+  - npm install
+   
+3. **Configure Environment Variables:**
   - Create a .env file with the following variables:
   - TOKEN=your_discord_bot_token
   - API_KEY=your_openai_api_key
